@@ -1,0 +1,43 @@
+.firstwindow {
+    display: grid;
+    place-items: center;
+    gap: 18.85281rem;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bandtitle {
+    height: 22.25rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+#titlemaj {
+    text-align: center;
+    font-size: 15.875rem;
+    line-height: normal;
+    transition: 0.6s all ease-in-out;
+}
+
+#titlehover {
+    text-align: center;
+    font-size: 8rem;
+    line-height: normal;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    color: var(--title-text-hover);
+}
+
+
+
+#light {
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    bottom: 95%;
+    transition: color 0.6s;
+}
