@@ -1,0 +1,227 @@
+/* Bento  CSS */
+
+.menu {
+
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 1218px;
+
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.menu:hover .bentomenu {
+    opacity: 0;
+}
+
+.menu:hover .bentohover {
+    opacity: 1;
+}
+
+.framebento {
+
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+
+}
+
+.bentomenu {
+    opacity: 1;
+}
+
+.bentohover {
+    opacity: 0;
+}
+
+.bentomenu {
+
+    width: 34px;
+    height: 34px;
+    top: 8px;
+    left: 8px;
+
+    position: absolute;
+
+}
+
+.bentohover {
+
+    width: 34px;
+    height: 34px;
+    top: 8px;
+    left: 8px;
+
+    position: absolute;
+
+}
+
+.vector {
+    width: 8.5px;
+    height: 8.5px;
+
+    position: absolute;
+    background: var(--icon-color);
+}
+
+/* Mode CSS */
+
+.mode {
+    width: 25px;
+    height: 25px;
+    left: 1168px;
+    top: -12.5px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.framemode {
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+
+}
+
+
+
+.mode:hover .framemode {
+    background: var(--navigation-hover);
+}
+
+.darkmode {
+    width: 15.36px;
+    height: 15.36px;
+    left: 5px;
+    top: 5px;
+
+    position: absolute;
+    color: var(--icon-color);
+}
+
+.mode:hover .darkmode {
+    color: var(--navigation-hover-active);
+}
+
+
+#en {
+    opacity: 0;
+    top: 2px;
+    left: 5px;
+}
+
+#fr {
+    opacity: 1;
+    top: 2px;
+    left: 7.5px;
+}
+
+#en {
+
+    position: absolute;
+    text-align: center;
+
+    font-size: 14px;
+    word-wrap: break-word;
+
+    color: var(--icon-color);
+}
+
+#fr {
+
+    position: absolute;
+    text-align: center;
+
+    font-size: 14px;
+    word-wrap: break-word;
+
+    color: var(--icon-color);
+
+}
+
+#fr:hover #fr {
+    opacity: 0;
+}
+
+#fr:hover #en {
+    opacity: 1;
+}
+
+/* Frame CSS */
+
+.frame {
+    width: 77.8rem;
+    height: 47rem;
+
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: auto;
+}
+
+.title {
+    width: 284px;
+    height: 90px;
+    left: 480px;
+    top: -45px;
+
+    position: absolute;
+}
+
+.frametitle {
+    width: 284px;
+    height: 69px;
+    left: 0;
+    top: 13px;
+
+    position: absolute;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+
+.textmaj {
+    width: 284px;
+    height: 69px;
+    left: 0;
+    top: -13px;
+
+    position: absolute;
+    text-align: center;
+    color: var(--title-text-color);
+    font-size: 64px;
+    word-wrap: break-word;
+}
+
+.textcurs {
+    width: 158.95px;
+    height: 38.14px;
+    left: 59px;
+    top: 9px;
+
+    position: absolute;
+    text-align: center;
+    color: var(--title-text-hover);
+    font-size: 32px;
+    word-wrap: break-word;
+}
