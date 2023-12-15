@@ -8,7 +8,7 @@
     --navigation-hover: #AD00FF;
     --navigation-active: #ad00ff;
     --border-color: #212121;
-
+    --icon-color: #212121;
 }
 
 * {
@@ -16,8 +16,44 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
+    transition: 0.6s all ease-in-out;
 }
 
 body {
     background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--title-text-color)
+}
+
+h2 {
+    color: var(--title-text-hover)
+}
+
+.icon {
+    color: var(--icon-color)
+}
+
+main {
+
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+}
+
+.slider {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    scroll-snap-align: center;
+}
+
+.show {
+    /* display: grid !important; */
+    opacity: 1;
+    /* visibility: visible !important; */
+    transition: opacity 0.5s ease-in-out;
 }
