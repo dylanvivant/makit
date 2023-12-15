@@ -8,9 +8,11 @@ import Bento from './menu/bento.js'
 import Language from './menu/language.js'
 import Darkmode from './menu/darkmode.js'
 
+import Project from '../projectpage/Project.js'
+
 import './style.css'
 
-export default function frame(props) {
+export default function frameproject(props) {
   return (
     <div className='frame'>
 
@@ -31,6 +33,7 @@ export default function frame(props) {
         <Darkmode click={props.click} />
       </div>
 
+      <Project />
     </div>
 
   )

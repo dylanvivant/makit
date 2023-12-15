@@ -4,7 +4,8 @@ import React, { useEffect, useState, useRef } from 'react'
 // import component
 
 import FirstWindow from '@/app/component/firstwindow/FirstWindow'
-import Frame from '@/app/component/frame/frame'
+import Frame from '@/app/component/frame/frameproject'
+import Project from './component/projectpage/Project'
 
 import './page.min.css'
 
@@ -114,6 +115,7 @@ export default function Home() {
                     <Frame
                         click={toggleDarkMode}
                     />
+
                 </div>
             </section>
         </main>

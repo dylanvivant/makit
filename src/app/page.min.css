@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.6s all ease-in-out;
+    text-decoration: none;
 }
 
 body {

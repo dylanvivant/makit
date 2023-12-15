@@ -1,0 +1,76 @@
+.project {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+    position: relative;
+    margin-top: 16.9%;
+}
+
+.project-cover {
+    width: 640px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.projects {
+    position: absolute;
+    left: 63%;
+    width: 35%;
+    /* top: 40%; */
+}
+
+.title-project {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--icon-color);
+}
+
+.title-project h4 {
+    color: var(--text-color);
+    font-size: 2.25rem;
+    line-height: normal;
+    font-weight: 800;
+}
+
+
+.title-project span {
+    color: var(--text-color);
+    text-align: right;
+    font-size: 2.25rem;
+    line-height: normal;
+}
+
+.project-list {
+    margin-top: 1rem;
+    height: 3rem;
+    border-bottom: solid 1px var(--icon-color);
+}
+
+.project-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-list :nth-child(1) {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-list :nth-child(2) {
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-list a:hover :nth-child(1) {
+    font-weight: 600;
+}
