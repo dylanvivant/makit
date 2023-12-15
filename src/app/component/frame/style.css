@@ -195,6 +195,7 @@
     top: 13px;
 
     position: absolute;
+    z-index: 1;
     background: var(--background-color);
     border: 1px solid var(--border-color);
 }
@@ -224,4 +225,43 @@
     color: var(--title-text-hover);
     font-size: 32px;
     word-wrap: break-word;
+}
+
+/* Frame Project  */
+
+.img-banner {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+.img-banner.active-banner {
+    opacity: 1;
+}
+
+.arrow {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 35%;
+}
+
+.arrowleft {
+    position: absolute;
+    color: var(--icon-color);
+    cursor: pointer;
+    left: 0;
+}
+
+.arrowright {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: var(--icon-color);
+
 }

@@ -5,7 +5,6 @@ import React, { useEffect, useState, useRef } from 'react'
 
 import FirstWindow from '@/app/component/firstwindow/FirstWindow'
 import Frame from '@/app/component/frame/frameproject'
-import Project from './component/projectpage/Project'
 
 import './page.min.css'
 
