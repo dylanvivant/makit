@@ -17,6 +17,8 @@ export default function Project(props) {
         setHoveredProject(project);
     };
 
+
+
     const handleMouseLeave = () => {
         setHoveredProject(null);
     };
@@ -43,12 +45,7 @@ export default function Project(props) {
                                 onMouseEnter={() => handleMouseEnter(project)}
                                 onMouseLeave={handleMouseLeave}
                             >
-                                <Ligne
-                                    key={project.id}
-                                    id={project.id}
-                                    name={project.name}
-                                    category={project.category}
-                                />
+                                <Ligne key={project.id} id={project.id} name={project.name} category={project.category} />
                             </div>
                         ))}
                     </div>
