@@ -1,20 +1,20 @@
 export const project = [{
-    "id": "1",
+    "id": "bard",
     "name": "Domaine Bard",
     "category": "Wordpress",
     "years": 2021,
     "cover": "//i.ibb.co/5YxmSXx/domaienbard.webp",
     "description": "Domaine Bard",
     "pictures": [
-        "//i.ibb.co/5YxmSXx/domaienbard.webp",
-        "//i.ibb.co/0nYbSv6/sophie.webp"],
+        "https://i.ibb.co/5YxmSXx/domaienbard.webp",
+        "https://i.ibb.co/0nYbSv6/sophie.webp"],
     "url": "//domainebard.com",
     "technologies": ["Wordpress", "Divi",]
 
 },
 
 {
-    "id": "2",
+    "id": "kasa",
     "name": "Kasa Immobilier",
     "category": "Développement Web",
     "years": 2023,

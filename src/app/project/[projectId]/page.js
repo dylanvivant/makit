@@ -1,13 +1,13 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useSearchParams } from 'next/navigation';
 import Frame from '@/app/project/frame'
 import Img from '@/app/project/img'
 import { project } from '@/app/data/project'
 
 import '@/app/page.min.css'
 import '@/app/component/frame/style.css'
-export default function page() {
+export default function page({ params }) {
 
     // Dark mode function
 
@@ -54,29 +54,48 @@ export default function page() {
 
     // Image function
 
+    const projectId = params.projectId;
+
     const [activeImage, setActiveImage] = useState(0);
+    const [projectData, setProjectData] = useState(null);
 
+    // Trouvez les données du projet correspondant à `projectId`
     useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveImage(prevActiveImage =>
-                prevActiveImage === project.length - 1 ? 0 : prevActiveImage + 1
-            );
-        }, 5000); // Change toutes les 5 secondes
+        const projectInfo = project.find(p => p.id === projectId);
+        setProjectData(projectInfo);
+    }, [projectId]);
 
-        return () => clearInterval(interval); // Nettoyage de l'intervalle
-    }, []);
+    // Gestion de l'affichage des images du projet
+    useEffect(() => {
+        if (projectData && projectData.pictures) {
+            const interval = setInterval(() => {
+                setActiveImage(prevActiveImage =>
+                    prevActiveImage === projectData.pictures.length - 1 ? 0 : prevActiveImage + 1
+                );
+            }, 5000); // Change toutes les 5 secondes
+
+            return () => clearInterval(interval); // Nettoyage de l'intervalle
+        }
+    }, [projectData]);
+
+    // Vérifiez que `projectData` n'est pas null avant de rendre
+    if (!projectData) {
+        return <div>Chargement du projet...</div>;
+    }
+
+    console.log(projectData);
 
     return (
         <main>
             <section className='slider'>
                 <Frame click={toggleDarkMode} />
 
-                {project.pictures.map((e, index) => (
+                {projectData.pictures.map((pic, index) => (
                     <Img
                         key={index}
-                        imgSrc={e}
-                        alt={project.name}
-                        className={`img-banner ${activeImage === index ? "active-banner" : ""}`}
+                        imgSrc={pic}
+                        alt={projectData.name}
+                        className={"img-banner" + (index === activeImage ? " active-banner" : "")}
                         onClick={() => setActiveImage(index)}
                     />
                 ))}

@@ -22,16 +22,11 @@ export default function Ligne(props) {
         setIsHovered(false);
     };
 
-    const router = useRouter();
-
 
 
     return (
         <Link
-            href={{
-                pathname: `/project/${props.id}`,
-                query: { id: props.id }
-            }}
+            href={`/project/${props.id}`}
             onMouseEnter={() => {
                 handleMouseEnter();
             }}
