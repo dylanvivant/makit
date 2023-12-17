@@ -652,6 +652,7 @@
 @media screen and (min-width: 1920px) and (max-width: 2559px) {
     .title {
         top: -3vh;
+        left: 39.5vw;
     }
 
     .frametitle {
@@ -672,7 +673,8 @@
 @media screen and (min-width: 2560px) {
 
     .title {
-        top: -1.5vh;
+        top: -2.5vh;
+        left: 41.1vw;
     }
 
     .frametitle {
