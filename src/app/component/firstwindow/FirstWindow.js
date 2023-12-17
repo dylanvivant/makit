@@ -5,6 +5,7 @@ import { MdEmojiObjects } from "react-icons/md";
 import { kelson } from '@/app/fonts/kelson/kelson';
 import { kaushan } from '@/app/fonts/kaushan/kaushan';
 import './style.css'
+import '../../page.min.css'
 
 export default function FirstWindow(props) {
     return (

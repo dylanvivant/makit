@@ -1,0 +1,12 @@
+:root {
+
+    --background-color: #fff;
+    --text-color: #212121;
+    --title-text-color: #AD00FF;
+    --title-text-hover: #212121;
+    --navigation-color: #212121;
+    --navigation-hover: #212121;
+    --navigation-hover-active: #fff;
+    --border-color: #212121;
+    --icon-color: #212121;
+}
