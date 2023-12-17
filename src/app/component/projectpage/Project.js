@@ -11,7 +11,7 @@ import "../../page.min.css";
 
 export default function Project(props) {
 
-    const [hoveredProject, setHoveredProject] = useState(null);
+    const [hoveredProject, setHoveredProject] = useState(1);
 
     const handleMouseEnter = (project) => {
         setHoveredProject(project);

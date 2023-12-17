@@ -10,14 +10,14 @@
 }
 
 .project-cover {
-    width: 640px;
+    width: 47vw;
     flex-shrink: 0;
     position: absolute;
 }
 
 .projects {
     position: absolute;
-    left: 63%;
+    left: 59vw;
     width: 35%;
     /* top: 40%; */
 }
@@ -73,4 +73,50 @@
 
 .project-list a:hover :nth-child(1) {
     font-weight: 600;
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+
+    .project-cover {
+        display: none;
+    }
+
+    .projects {
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 95%;
+    }
+
+    .title-project h4 {
+        font-size: 1.5rem;
+    }
+
+    .title-project span {
+        font-size: 1.5rem;
+    }
+
+    .project-list :nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .project-list :nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .project-cover {
+        display: none;
+    }
+
+    .projects {
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 97%;
+    }
+
+
 }

@@ -4,8 +4,8 @@
 
     width: 50px;
     height: 50px;
-    top: -25px;
-    left: 1218px;
+    top: -3vh;
+    left: 92vw;
 
     position: absolute;
     cursor: pointer;
@@ -77,8 +77,8 @@
 .mode {
     width: 25px;
     height: 25px;
-    left: 1168px;
-    top: -12.5px;
+    left: 85vw;
+    top: -1vw;
     position: absolute;
     cursor: pointer;
     z-index: 1;
@@ -164,8 +164,8 @@
 /* Frame CSS */
 
 .frame {
-    width: 77.8rem;
-    height: 47rem;
+    width: 94vw;
+    height: 90vh;
 
     position: relative;
     background-color: transparent;
@@ -182,8 +182,8 @@
 .title {
     width: 284px;
     height: 90px;
-    left: 480px;
-    top: -45px;
+    left: 37.1vw;
+    top: -5.5vh;
 
     position: absolute;
 }
@@ -228,17 +228,466 @@
 }
 
 /* Frame Project  */
+.one-project {
+    position: absolute;
+    width: 94vw;
+    height: 90vh;
+}
 
 .img-banner {
-    width: 77.6rem;
-    height: 34rem;
+    width: 100%;
+    height: 73%;
     object-fit: cover;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    top: 20.7vh;
 }
 
 .img-banner.active-banner {
     opacity: 1;
+}
+
+.description {
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    width: 100%;
+    padding-right: 3vw;
+    padding-left: 3vw;
+}
+
+.desc-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--icon-color);
+}
+
+.desc-title h2 {
+    color: #AD00FF;
+    font-size: 32px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.desc-title a:hover h2 {
+    font-weight: 800;
+}
+
+.years {
+    position: relative;
+    /* right: 3rem; */
+}
+
+.years h2 {
+    color: #AD00FF;
+    font-size: 32px;
+    word-wrap: break-word;
+}
+
+.years p {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    height: 65%;
+}
+
+.categorie {
+    width: 50%;
+}
+
+.categorie h2 {
+    color: #AD00FF;
+    font-size: 22px;
+    word-wrap: break-word;
+}
+
+.categorie p {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+#technologie {
+    display: flex;
+    flex-direction: column;
+}
+
+#technologie span {
+    color: var(--text-color);
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.desc {
+    width: 50%;
+    text-align: right;
+}
+
+.desc p {
+    color: var(--text-color);
+    font-size: 12px;
+    word-wrap: break-word;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+@media screen and (max-width: 300px) {
+
+    .frametitle {
+        width: 150px;
+        height: 45px;
+        left: -45px;
+        top: 7vw;
+        background: transparent;
+        border: none;
+    }
+
+    .textmaj {
+        width: 150px;
+        height: 53px;
+        top: -2px;
+        font-size: 32px;
+    }
+
+    .textcurs {
+        width: 150px;
+        height: 53px;
+        left: 0px;
+        font-size: 16px;
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        top: -4px;
+        left: 0;
+    }
+
+    .framebento {
+        border: none;
+        background: none;
+    }
+
+    .bentomenu {
+        width: 36px;
+        height: 50px;
+        left: 5px;
+    }
+
+    .mode {
+        left: 83vw;
+        top: 8px;
+    }
+
+    .framemode {
+        border: none;
+        background: none;
+    }
+
+    .desc-title h2 {
+        font-size: 16px;
+    }
+
+    .years p {
+        font-size: 8px;
+        top: 5px;
+        left: 15px;
+    }
+
+    .categorie {
+        width: 40%;
+    }
+
+    .categorie h2 {
+        font-size: 12px;
+    }
+
+    #technologie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #technologie span {
+        font-size: 8px;
+    }
+
+    .desc {
+        overflow: scroll;
+        height: 35px;
+    }
+
+    .desc p {
+        font-size: 6px;
+
+
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .frametitle {
+        width: 150px;
+        height: 45px;
+        left: -45px;
+        top: 10vw;
+        background: transparent;
+        border: none;
+    }
+
+    .textmaj {
+        width: 150px;
+        height: 53px;
+        top: -2px;
+        font-size: 32px;
+    }
+
+    .textcurs {
+        width: 150px;
+        height: 53px;
+        left: 0px;
+        font-size: 16px;
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        top: -4px;
+        left: 0;
+    }
+
+    .framebento {
+        border: none;
+        background: none;
+    }
+
+    .bentomenu {
+        width: 36px;
+        height: 50px;
+        left: 5px;
+    }
+
+    .mode {
+        left: 83vw;
+        top: 8px;
+    }
+
+    .framemode {
+        border: none;
+        background: none;
+    }
+
+    .desc-title h2 {
+        font-size: 16px;
+    }
+
+    .years p {
+        font-size: 8px;
+        top: 5px;
+        left: 15px;
+    }
+
+    .categorie {
+        width: 40%;
+    }
+
+    .categorie h2 {
+        font-size: 12px;
+    }
+
+    #technologie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #technologie span {
+        font-size: 8px;
+    }
+
+    .desc {
+        overflow: scroll;
+        height: 35px;
+    }
+
+    .desc p {
+        font-size: 6px;
+
+
+    }
+}
+
+@media screen and (min-width: 325px) and (max-width: 767px) {
+
+    .title {
+        width: 150px;
+        height: 45px;
+        left: 40vw;
+        top: -4.5vh;
+    }
+
+    .frametitle {
+        width: 150px;
+        height: 45px;
+        left: -45px;
+        top: 8vw;
+        background: transparent;
+        border: none;
+    }
+
+    .textmaj {
+        width: 150px;
+        height: 53px;
+        top: -2px;
+        font-size: 32px;
+    }
+
+    .textcurs {
+        width: 150px;
+        height: 53px;
+        left: 0px;
+        font-size: 16px;
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        top: -4px;
+        left: 0;
+    }
+
+    .framebento {
+        border: none;
+        background: none;
+    }
+
+    .bentomenu {
+        width: 36px;
+        height: 50px;
+        left: 5px;
+    }
+
+    .mode {
+        left: 83vw;
+        top: 8px;
+    }
+
+    .framemode {
+        border: none;
+        background: none;
+    }
+
+    .desc-title h2 {
+        font-size: 16px;
+    }
+
+    .years p {
+        font-size: 8px;
+        top: 5px;
+        left: 15px;
+    }
+
+    .categorie {
+        width: 40%;
+    }
+
+    .categorie h2 {
+        font-size: 12px;
+    }
+
+
+    #technologie span {
+        font-size: 8px;
+    }
+
+    .desc {
+        overflow: scroll;
+        height: 5.5rem;
+    }
+
+    .desc p {
+        font-size: 8px;
+
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .title {
+        left: 28.5vw;
+        top: -4.5vh;
+    }
+
+    .menu {
+        top: 0;
+        left: 0;
+    }
+
+    .framebento {
+        border: none;
+        background: none;
+    }
+
+    .framemode {
+        border: none;
+        background: none;
+    }
+
+    .mode {
+        left: 90.5vw;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+    .title {
+        top: -3vh;
+    }
+
+    .frametitle {
+        top: 0;
+    }
+
+
+    .menu {
+        top: -2.5vh;
+        left: 92.5vw;
+    }
+
+    .mode {
+        top: -0.6vw;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .title {
+        top: -1.5vh;
+    }
+
+    .frametitle {
+        top: 0;
+    }
+
+
+
+    .menu {
+        top: -2vh;
+        left: 93vw;
+    }
+
+    .mode {
+        top: -0.6vw;
+    }
+
 }

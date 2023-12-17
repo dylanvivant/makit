@@ -1,8 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import { useSearchParams } from 'next/navigation';
 import Frame from '@/app/project/frame'
 import Img from '@/app/project/img'
+import Description from '../description'
 import { project } from '@/app/data/project'
 
 import '@/app/page.min.css'
@@ -78,6 +78,8 @@ export default function page({ params }) {
         }
     }, [projectData]);
 
+
+
     // Vérifiez que `projectData` n'est pas null avant de rendre
     if (!projectData) {
         return <div>Chargement du projet...</div>;
@@ -89,17 +91,25 @@ export default function page({ params }) {
         <main>
             <section className='slider'>
                 <Frame click={toggleDarkMode} />
+                <div className="one-project">
 
-                {projectData.pictures.map((pic, index) => (
-                    <Img
-                        key={index}
-                        imgSrc={pic}
-                        alt={projectData.name}
-                        className={"img-banner" + (index === activeImage ? " active-banner" : "")}
-                        onClick={() => setActiveImage(index)}
+                    {projectData.pictures.map((pic, index) => (
+                        <Img
+                            key={index}
+                            imgSrc={pic}
+                            alt={projectData.name}
+                            className={"img-banner" + (index === activeImage ? " active-banner" : "")}
+                            onClick={() => setActiveImage(index)}
+                        />
+                    ))}
+                    <Description
+                        title={projectData.name}
+                        url={projectData.url}
+                        years={projectData.years}
+                        technologie={projectData.technologies}
+                        description={projectData.description}
                     />
-                ))}
-
+                </div>
 
             </section>
         </main>

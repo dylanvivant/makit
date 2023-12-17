@@ -71,3 +71,19 @@
         font-size: 20px;
     }
 }
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+
+    #titlemaj {
+        font-size: 3rem;
+    }
+
+    #titlehover {
+        font-size: 1.5rem;
+
+    }
+
+    #light {
+        font-size: 10px;
+    }
+}
