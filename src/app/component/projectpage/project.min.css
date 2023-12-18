@@ -6,20 +6,24 @@
 
 .mask {
     position: relative;
-    margin-top: 16.9%;
 }
 
 .project-cover {
-    width: 47vw;
-    flex-shrink: 0;
+    width: 50%;
     position: absolute;
+}
+
+.img-cover {
+    width: 100%;
+    max-height: 89.8vh;
+    object-fit: cover;
 }
 
 .projects {
     position: absolute;
     left: 59vw;
     width: 35%;
-    /* top: 40%; */
+    top: 20vh;
 }
 
 .title-project {
@@ -76,6 +80,9 @@
 }
 
 @media screen and (min-width: 240px) and (max-width: 767px) {
+    .project {
+        top: 10vh;
+    }
 
     .project-cover {
         display: none;
@@ -113,7 +120,7 @@
     }
 
     .projects {
-        top: 0.4rem;
+        top: 10vh;
         left: 0.4rem;
         width: 97%;
     }

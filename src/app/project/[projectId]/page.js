@@ -85,7 +85,6 @@ export default function page({ params }) {
         return <div>Chargement du projet...</div>;
     }
 
-    console.log(projectData);
 
     return (
         <main>

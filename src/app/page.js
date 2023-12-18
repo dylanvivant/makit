@@ -5,6 +5,7 @@ import React, { useEffect, useState, useRef } from 'react'
 
 import FirstWindow from '@/app/component/firstwindow/FirstWindow'
 import Frame from '@/app/component/frame/frameproject'
+import About from '@/app/component/frame/frameabout'
 
 import './page.min.css'
 
@@ -58,6 +59,7 @@ export default function Home() {
 
     const section1Ref = useRef();
     const section2Ref = useRef();
+    const section3Ref = useRef();
 
     useEffect(() => {
         const observerOptions = {
@@ -92,6 +94,10 @@ export default function Home() {
             observer.observe(section2Ref.current);
         }
 
+        if (section3Ref.current) {
+            observer.observe(section3Ref.current);
+        };
+
         return () => {
             observer.disconnect();
         };
@@ -116,6 +122,15 @@ export default function Home() {
                     />
 
                 </div>
+            </section>
+
+            <section ref={section3Ref} id={'about'} className='slider'>
+                <div className='observe-me hidden'>
+                    <About
+                        click={toggleDarkMode}
+                    />
+                </div>
+
             </section>
         </main>
 

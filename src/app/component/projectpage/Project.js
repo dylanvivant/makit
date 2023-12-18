@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { project as Projects } from "../../data/project";
+import { about as About } from "../../data/about";
 import { kelson_regular, kelson_meduim } from "@/app/fonts/kelson/kelson";
 
-import Img from "./imgproject/img";
+import Img from '@/app/project/img'
 import Ligne from "./ligne/ligne";
 
 import "./project.min.css";
@@ -11,7 +12,7 @@ import "../../page.min.css";
 
 export default function Project(props) {
 
-    const [hoveredProject, setHoveredProject] = useState(null);
+    const [hoveredProject, setHoveredProject] = useState(1);
 
     const handleMouseEnter = (project) => {
         setHoveredProject(project);
@@ -29,7 +30,7 @@ export default function Project(props) {
                 {/* <div className="bgmask" /> */}
                 {hoveredProject && (
                     <div className="project-cover">
-                        <Img src={hoveredProject.cover} />
+                        <Img className='img-cover' imgSrc={hoveredProject.cover} />
                     </div>
                 )}
                 <div className="projects">

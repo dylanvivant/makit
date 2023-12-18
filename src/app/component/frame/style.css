@@ -332,7 +332,7 @@
 
 .desc p {
     color: var(--text-color);
-    font-size: 12px;
+    font-size: 14px;
     word-wrap: break-word;
     text-align: justify;
     font-style: normal;
@@ -341,6 +341,10 @@
 }
 
 @media screen and (max-width: 300px) {
+    .projects-list {
+        overflow: scroll;
+        height: 63vh;
+    }
 
     .frametitle {
         width: 150px;
@@ -435,6 +439,11 @@
 
 
 @media screen and (max-width: 320px) {
+
+    .projects-list {
+        overflow: scroll;
+        height: 63vh;
+    }
 
     .frametitle {
         width: 150px;
