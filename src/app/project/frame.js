@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { useParams } from 'next/navigation'
 
 import { kelson } from '@/app/fonts/kelson/kelson.js'
@@ -22,18 +23,18 @@ export default function frame(props) {
 
   return (
     <div className='frame'>
-
-      <div className="title">
-        <div className="frametitle">
-          <div className={kelson.className}>
-            <h3 className='textmaj'>MAKE IT</h3>
-          </div>
-          <div className={kaushan.className}>
-            <h3 className='textcurs'>differently</h3>
+      <Link href={"/"}>
+        <div className="title">
+          <div className="frametitle">
+            <div className={kelson.className}>
+              <h3 className='textmaj'>MAKE IT</h3>
+            </div>
+            <div className={kaushan.className}>
+              <h3 className='textcurs'>differently</h3>
+            </div>
           </div>
         </div>
-      </div>
-
+      </Link>
       <div className="navigation">
         <Bento />
         {/* <Language /> */}
