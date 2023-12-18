@@ -80,6 +80,9 @@
 }
 
 @media screen and (min-width: 240px) and (max-width: 767px) {
+    .project {
+        top: 10vh;
+    }
 
     .project-cover {
         display: none;
@@ -117,7 +120,7 @@
     }
 
     .projects {
-        top: 0.4rem;
+        top: 10vh;
         left: 0.4rem;
         width: 97%;
     }

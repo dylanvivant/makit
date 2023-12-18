@@ -31,7 +31,6 @@ export default function About() {
         setIsLinkedinHovered(false);
     };
 
-    console.log(about[0].cover)
 
     return (
         <div className='about'>
