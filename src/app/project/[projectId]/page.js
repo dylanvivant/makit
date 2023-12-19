@@ -7,7 +7,7 @@ import { project } from '@/app/data/project'
 
 import '@/app/page.min.css'
 import '@/app/component/frame/style.css'
-export default function page({ params }) {
+export default function Page({ params }) {
 
     // Dark mode function
 
@@ -99,6 +99,8 @@ export default function page({ params }) {
                             alt={projectData.name}
                             className={"img-banner" + (index === activeImage ? " active-banner" : "")}
                             onClick={() => setActiveImage(index)}
+                            width={1920}
+                            height={1430}
                         />
                     ))}
                     <Description

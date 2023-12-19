@@ -12,12 +12,11 @@ import "../../page.min.css";
 
 export default function Project(props) {
 
-    const [hoveredProject, setHoveredProject] = useState(1);
+    const [hoveredProject, setHoveredProject] = useState(null);
 
     const handleMouseEnter = (project) => {
         setHoveredProject(project);
     };
-
 
 
     const handleMouseLeave = () => {
@@ -29,9 +28,10 @@ export default function Project(props) {
             <div className="mask">
                 {/* <div className="bgmask" /> */}
                 {hoveredProject && (
-                    <div className="project-cover">
-                        <Img className='img-cover' imgSrc={hoveredProject.cover} />
+                    <div className="project-cover" >
+                        <Img className='img-cover' imgSrc={hoveredProject.cover} width={1920} height={1430} alt={hoveredProject.name} />
                     </div>
+
                 )}
                 <div className="projects">
                     <div className="title-project">

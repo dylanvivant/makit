@@ -1,12 +1,14 @@
+
+
 export const project = [
     {
         "id": "kasa",
         "name": "Kasa Immobilier",
         "category": "Développement Web",
         "years": 2023,
-        "cover": "https://i.ibb.co/pzkqqcB/kasa.webp",
+        "cover": "/image/kasa.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
-        "pictures": ["//i.ibb.co/FqrqJ9N/kasa.webp"],
+        "pictures": ["/image/kasa.webp"],
         "url": "//kasaimmobilier.netlify.app/",
         "technologies": ["HTML", "CSS", "React"]
 
@@ -17,9 +19,9 @@ export const project = [
         "name": "Mon Vieux Grimoire",
         "category": "Développement Web",
         "years": 2023,
-        "cover": "https://i.ibb.co/F5YCvTc/monvieuxgrimoire.webp",
+        "cover": "/image/monvieuxgrimoire.webp",
         "description": "Ce projet de la formation OpenClassrooms consistait à créer le backend d'un site de notation de livres. J'ai rencontré plusieurs défis tout au long de ce projet. Le premier a été la gestion des autorisations CORS, puis j'ai également dû mettre en place une autorisation permettant la modification d'un livre uniquement par son éditeur. Malgré ces difficultés, ce projet m'a permis d'apprendre comment initialiser un serveur Node.js.",
-        "pictures": ["//i.ibb.co/FqrqJ9N/kasa.webp"],
+        "pictures": ["/image/monvieuxgrimoire.webp"],
         "url": "https://github.com/JackOwlTV/P7-Dev-Web-livres",
         "technologies": ["NodeJS", "Express", "MongoDB"]
 
@@ -31,9 +33,9 @@ export const project = [
         "name": "Sophie Bluel",
         "category": "Optimisation SEO",
         "years": 2023,
-        "cover": "https://i.ibb.co/48Skt9y/sophiebluel.webp",
+        "cover": "/image/sophiebluel.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
-        "pictures": ["https://i.ibb.co/0nYbSv6/sophie.webp"],
+        "pictures": ["/image/sophiebluel.webp"],
         "url": "https://github.com/JackOwlTV/projet-3",
         "technologies": ["Lighthouse", "WaveTool", "React"]
 
@@ -45,9 +47,9 @@ export const project = [
         "name": "Stephanie Erhard",
         "category": "Wordpress",
         "years": 2023,
-        "cover": "https://i.ibb.co/8szmTTd/stepahnie.webp",
+        "cover": "/image/stepahnie.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
-        "pictures": ["https://i.ibb.co/0nYbSv6/sophie.webp"],
+        "pictures": ["/image/stepahnie.webp"],
         "url": "//stephanieerhard.com/",
         "technologies": ["Illustrator", "WaveTool", "React"]
 
@@ -59,10 +61,10 @@ export const project = [
         "name": "Domaine Bard",
         "category": "Wordpress",
         "years": 2021,
-        "cover": "https://i.ibb.co/mCf19Jf/bard.webp",
+        "cover": "/image/bard.webp",
         "description": "Le site du Domaine Bard a été réalisé il y a plus d'un an déjà. J'ai personnellement travaillé sur les pages dédiées aux vins ainsi que sur la charte graphique générale du site. Notre objectif était de mettre en avant l'amour de la nature en utilisant la couleur verte, tout en reflétant le prestige du domaine avec des accents dorés. Nous avons utilisé le plugin Divi de WordPress pour concrétiser ce projet. Grâce à cette expérience, j'ai pu acquérir des compétences et expérimenter avec des outils de No code.",
         "pictures": [
-            "https://i.ibb.co/5YxmSXx/domaienbard.webp",
+            "/image/bard.webp",
         ],
         "url": "//domainebard.com",
         "technologies": ["Wordpress", "Divi",]
