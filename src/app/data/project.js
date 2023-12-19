@@ -8,7 +8,7 @@ export const project = [
         "years": 2023,
         "cover": "/image/kasa.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
-        "pictures": ["/image/kasa.webp"],
+        "pictures": ["/image/kasa-projet.webp"],
         "url": "//kasaimmobilier.netlify.app/",
         "technologies": ["HTML", "CSS", "React"]
 
@@ -49,7 +49,7 @@ export const project = [
         "years": 2023,
         "cover": "/image/stepahnie.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
-        "pictures": ["/image/stepahnie.webp"],
+        "pictures": ["/image/stephanie-projet.webp"],
         "url": "//stephanieerhard.com/",
         "technologies": ["Illustrator", "WaveTool", "React"]
 
@@ -64,7 +64,7 @@ export const project = [
         "cover": "/image/bard.webp",
         "description": "Le site du Domaine Bard a été réalisé il y a plus d'un an déjà. J'ai personnellement travaillé sur les pages dédiées aux vins ainsi que sur la charte graphique générale du site. Notre objectif était de mettre en avant l'amour de la nature en utilisant la couleur verte, tout en reflétant le prestige du domaine avec des accents dorés. Nous avons utilisé le plugin Divi de WordPress pour concrétiser ce projet. Grâce à cette expérience, j'ai pu acquérir des compétences et expérimenter avec des outils de No code.",
         "pictures": [
-            "/image/bard.webp",
+            "/image/bard-projet.webp",
         ],
         "url": "//domainebard.com",
         "technologies": ["Wordpress", "Divi",]
