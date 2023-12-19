@@ -9,7 +9,7 @@ import "./style.css";
 
 import { MdEmojiObjects } from "react-icons/md";
 
-export default function page() {
+export default function Page() {
 
     // Dark mode function
 
