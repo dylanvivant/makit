@@ -2,6 +2,19 @@
 
 export const project = [
     {
+        "id": "restary",
+        "name": "Restery",
+        "category": "Développement Web",
+        "years": 2023,
+        "cover": "/image/restary.webp",
+        "description": "Ce projet représente ma première expérience avec Next JS après avoir réalisé mon portfolio. L'objectif était de reproduire un site disponible gratuitement sur Framer pour améliorer mes compétences.",
+        "pictures": ["/image/restary-project.webp"],
+        "url": "//kasaimmobilier.netlify.app/",
+        "technologies": ["NextJS", "Framer", "React"]
+
+
+    },
+    {
         "id": "kasa",
         "name": "Kasa Immobilier",
         "category": "Développement Web",
@@ -9,7 +22,7 @@ export const project = [
         "cover": "/image/kasa.webp",
         "description": "Ce projet de la formation d'OpenClassrooms consistait à créer le frontend en React d'un site de location immobilière. La principale difficulté rencontrée a été la compréhension des props et de l'utilisation de useState. Une fois que j'ai maîtrisé ces concepts, le projet s'est déroulé rapidement. Grâce à cette expérience, j'ai acquis des compétences en utilisation de React, en particulier avec Create React App.",
         "pictures": ["/image/kasa-projet.webp"],
-        "url": "//kasaimmobilier.netlify.app/",
+        "url": "//restary.vercel.app/",
         "technologies": ["HTML", "CSS", "React"]
 
 
