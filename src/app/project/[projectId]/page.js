@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import { useRouter } from "next/navigation";
 import Frame from '@/app/project/frame'
 import Img from '@/app/project/img'
 import Description from '../description'
@@ -8,7 +9,11 @@ import { project } from '@/app/data/project'
 import '@/app/page.min.css'
 import '@/app/component/frame/style.css'
 export default function Page({ params }) {
+    const router = useRouter();
 
+    const backClick = () => {
+        router.push("/#project");
+    };
     // Dark mode function
 
     const [darkMode, setDarkMode] = useState((false));
@@ -86,6 +91,7 @@ export default function Page({ params }) {
     }
 
 
+
     return (
         <main>
             <section className='slider'>
@@ -100,6 +106,7 @@ export default function Page({ params }) {
                             onClick={() => setActiveImage(index)}
                             width={1920}
                             height={1430}
+                            backIcon={backClick}
                         />
 
                     ))}
