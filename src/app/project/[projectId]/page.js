@@ -9,6 +9,7 @@ import { project } from '@/app/data/project'
 import '@/app/page.min.css'
 import '@/app/component/frame/style.css'
 export default function Page({ params }) {
+
     const router = useRouter();
 
     const backClick = () => {

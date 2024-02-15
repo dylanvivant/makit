@@ -260,6 +260,16 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1.5px solid var(--icon-color);
+    height: 4vh;
+}
+
+.desc-title a {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6vw;
+
 }
 
 .desc-title h2 {
@@ -270,7 +280,11 @@
 }
 
 .desc-title a:hover h2 {
-    font-weight: 800;
+    color: #8d01ce;
+}
+
+.desc-title a:hover svg path {
+    fill: #8d01ce;
 }
 
 .years {
