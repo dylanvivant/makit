@@ -1,10 +1,12 @@
 import React from 'react'
-
 import Image from 'next/image'
 
-export default function img({ src }) {
-    return (
-        <Image src={src} alt="Project Cover" width={props.width} />
+export default function img(props) {
 
+    return (
+
+
+        <Image className={props.className} src={props.imgSrc} alt={props.alt} width={props.width} height={props.height} />
     )
+
 }

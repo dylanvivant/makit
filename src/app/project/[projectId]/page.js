@@ -91,7 +91,6 @@ export default function Page({ params }) {
             <section className='slider'>
                 <Frame click={toggleDarkMode} />
                 <div className="one-project">
-
                     {projectData.pictures.map((pic, index) => (
                         <Img
                             key={index}
@@ -102,6 +101,7 @@ export default function Page({ params }) {
                             width={1920}
                             height={1430}
                         />
+
                     ))}
                     <Description
                         title={projectData.name}

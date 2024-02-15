@@ -340,6 +340,15 @@
     line-height: normal;
 }
 
+.backtoproject {
+    position: absolute;
+    z-index: 1000;
+    top: 1%;
+    left: 0.5%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 300px) {
     .projects-list {
         overflow: scroll;
@@ -434,6 +443,10 @@
         font-size: 6px;
 
 
+    }
+
+    .backtoproject {
+        top: 95%
     }
 }
 
@@ -534,6 +547,10 @@
 
 
     }
+
+    .backtoproject {
+        top: 94%
+    }
 }
 
 @media screen and (min-width: 325px) and (max-width: 767px) {
@@ -629,6 +646,10 @@
 
 
     }
+
+    .backtoproject {
+        top: 94%
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -655,6 +676,11 @@
     .mode {
         left: 90.5vw;
         top: 0;
+    }
+
+    .backtoproject {
+        top: 94%;
+        left: 3%
     }
 }
 

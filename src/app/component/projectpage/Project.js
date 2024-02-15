@@ -4,7 +4,7 @@ import { project as Projects } from "../../data/project";
 import { about as About } from "../../data/about";
 import { kelson_regular, kelson_meduim } from "@/app/fonts/kelson/kelson";
 
-import Img from '@/app/project/img'
+import Img from './imgproject/img'
 import Ligne from "./ligne/ligne";
 
 import "./project.min.css";
