@@ -266,9 +266,9 @@
 .desc-title a {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    width: 6vw;
+    width: 50%;
 
 }
 
@@ -277,6 +277,7 @@
     font-size: 32px;
     font-weight: 400;
     word-wrap: break-word;
+    margin-right: 1%;
 }
 
 .desc-title a:hover h2 {
@@ -289,6 +290,7 @@
 
 .years {
     position: relative;
+    width: 100px;
     /* right: 3rem; */
 }
 
@@ -420,8 +422,21 @@
         background: none;
     }
 
+    .desc-title a {
+        width: 60%;
+    }
+
+    .desc-title a svg {
+        display: none;
+
+    }
+
     .desc-title h2 {
         font-size: 16px;
+    }
+
+    .years {
+        width: 50px;
     }
 
     .years p {
@@ -523,8 +538,21 @@
         background: none;
     }
 
+    .desc-title a {
+        width: 60%;
+    }
+
+    .desc-title a svg {
+        display: none;
+
+    }
+
     .desc-title h2 {
         font-size: 16px;
+    }
+
+    .years {
+        width: 50px;
     }
 
     .years p {
@@ -627,8 +655,21 @@
         background: none;
     }
 
+    .desc-title a {
+        width: 60%;
+    }
+
+    .desc-title a svg {
+        width: 20px;
+        height: 20px;
+    }
+
     .desc-title h2 {
         font-size: 16px;
+    }
+
+    .years {
+        width: 50px;
     }
 
     .years p {
